@@ -1,0 +1,157 @@
+/*导航*/
+
+#menu {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#menu li {
+    text-align: center;
+    width: 20%;
+    line-height: 50px;
+    float: left;
+    cursor: pointer;
+}
+
+#menu li a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    font-size: 16px;
+    display: inline-block;
+}
+
+#menu .active {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/*右边导航*/
+
+#fp-nav ul li a span {
+    border: 1px solid #ccc;
+}
+
+#fp-nav ul li a.active span {
+    background: #fff;
+    box-shadow: 0 0 5px #fff;
+    width: 12px;
+    height: 12px;
+    /*left: 1px;*/
+}
+/*one*/
+canvas{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 9999;
+}
+.section {
+    overflow: hidden;
+}
+.one{
+  position: relative;
+}
+.one .backImg .itText{
+  width: 960px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top:-150px;
+  margin-left:-480px;
+  text-align: center;
+  border:1px solid #fff;
+  background-color:rgba(0, 0, 0, 0.8);
+  z-index:9999999;
+}
+.one h1{
+ color:#fff;
+ font-size:100px;
+ padding:30px 30px 0px 30px;
+ /*text-shadow: 10px 10px 5px rgba(0, 0, 0, 1);
+ */
+  /*-webkit-box-reflect: below -50px -webkit-gradient(linear, center top, center bottom, from(rgba(0,0,0,0)), to(rgba(255,255,255,1)));   */
+}
+.one h2{
+  color:#fff;
+  font-size:40px;
+  padding:60px;
+  
+}
+.one .backImg{
+  width: 100%;
+  height: 100%;
+}
+.one .backImg img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.three {
+    display: flex;
+    padding: 100px;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.three .info {
+    width: 632px;
+    height: 278px;
+    padding-top: 85px;
+}
+
+.three .yuanq {
+    width: 454px;
+    height: 450px;
+    position: relative
+}
+
+.three .daodan {
+    width: 203px;
+    height: 203px;
+    position: absolute;
+    opacity: 0;
+}
+
+.three.current .daodan {
+    top: 70%;
+    left: -20%;
+    /*top:27%;
+         left:27%;*/
+    margin: -200px 0 0 222px;
+    transition: all 1s ease-in-out;
+    opacity: 1;
+}
+
+.line3 {
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+}
+
+.line3 {
+    left: 0;
+    transform: translateY(-150%);
+}
+
+.five .kuang3 {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateX(150%);
+}
+
+.five.current .kuang3 {
+    transform: translateX(0);
+    transition: all 1s 1s ease-in-out;
+}
