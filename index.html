@@ -6,46 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>IT光明</title>
-    <link  rel="stylesheet" href="css/jquery.fullPage.css">
-    <link rel = "stylesheet"  href = "css/base.css" / >
-    <link rel = "stylesheet"  href = "css/index.css" / >
-     
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts/iconfont.css"/>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+
 </head>
 
 <body>
     <div id="box">
         <div class="section one">
-           <div class="backImg">
-               <div class="itText">
-                   <h1>I'M IT-光明</h1>
-                   <h2>代码 &amp; 完美的网页前端“程序猿”</h2>
-               </div>
-               <img src="images/pega1.jpg" alt="">
-               <canvas id="stars"></canvas>
-               
-           </div>
+            <div class="backImg">
+                <div class="itText">
+                    <h1>I'M IT-光明</h1>
+                    <h2>代码 &amp; 完美的网页前端“程序猿”</h2>
+                </div>
+                <img src="images/pega1.jpg" alt="">
+                <canvas id="stars"></canvas>
+
+            </div>
         </div>
 
-        <div class="section two">
-           
+        <div class="section two clearfix">
+            <div class="guanyu">
+                <p>关于我</p>
+                <p>A small introduction about my self</p>
+            </div>
+            <div class="introduce fl">
+                <h5>自我介绍</h5>
+
+            </div>
+            <div class="portrait fr visible-lg-inline">
+                <img src="images/touxiang.jpg" alt="头像">
+                <div class="tu1"></div>
+                <div class="tu2"></div>
+                <div class="tu3"></div>
+            </div>
         </div>
 
         <div class="section three">
-           
-            <div class="yuanq">
-                <img src="images/circle.png" alt="">
-                <div class="daodan">
-                    <img src="images/rocket.png" alt="">
-                </div>
+            <div class="skill">
+                <p>技能</p>
+                <p>The skills are constantly growing</p>
+            </div>
+            <div class="visible-lg-inline" id="container">
+            </div>
+            <div id="containers">
             </div>
         </div>
 
         <div class="section four">
-            
+            <!--<img src="images/yuan.jpg" alt="">-->
+            <div class="works clearfix">
+                <div>
+                    <p>工作经验
+                    </p>
+                    <p>Work in the accumulation and growth</p>
+                </div>
+
+                <div class="work_left fl visible-lg-inline">
+                    <ul>
+                        <li><span>第一份工作</span></li>
+                        <li><span>第二份工作</span></li>
+                        <li><span>第三份工作</span></li>
+                    </ul>
+                </div>
+                <div class="work_right fr">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div class="section five">
-            
+            <div class="project">
+                <p>代码项目</p>
+                <p>
+                    Perfect project show
+                </p>
+            </div>
+            <div class="exhibition">
+                <div class="e_lists">
+                    <ul>
+                        <li class="no0"><img src="" alt=""></li>
+                        <li class="no1"><img src="" alt=""></li>
+                        <li class="no2"><img src="" alt=""></li>
+                        <li class="no3"><img src="" alt=""></li>
+                        <li class="no4"><img src="" alt=""></li>
+                        <li class="waiting"><img src="" alt=""></li>
+                        <li class="waiting"><img src="" alt=""></li>
+                        <li class="waiting"><img src="" alt=""></li>
+                        <li class="waiting"><img src="" alt=""></li>
+                    </ul>
+                </div>
+                <div class="e_btn">
+                    <span class="e_left"></span>
+                    <span class="e_right"></span>
+                </div>
+            </div>
+            <div class="relation">
+                <ul>
+                    <li>
+                        <span class="iconfont icon-QQ">QQ</span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span class="iconfont icon-weixin">微信</span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span class="iconfont icon-shouji">联系电话</span>
+                        <span>188-1918-5901</span>
+                    </li>
+                    <li>
+                        <span class="iconfont icon-wifi">博客园</span>
+                        <span></span>
+                        <a href="http://www.cnblogs.com/pgm0908/" target="_blank">http://www.cnblogs<br>.com/pgm0908/</a>
+                    </li>
+                    <li>
+                        <span class="iconfont icon-guanzhu">GitHub博客</span>
+                        <span></span>
+                        <a href="http://www.cnblogs.com/pgm0908/" target="_blank">点击跳转</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <ul id="menu">
@@ -61,5 +151,22 @@
 </html>
 <script src="js/jquery-1.12.4.js"></script>
 <script src="js/jquery.fullPage.js"></script>
-<script  src="js/canvas.js"></script>
-<script  src="js/index.js"></script>
+<script src="js/bootstrap/js/bootstrap.min.js"></script>
+
+<!--第三屏引入-->
+<script src="js/highcharts/highcharts.js"></script>
+<script src="js/highcharts/more.js"></script>
+<script src="js/highcharts/gauge.js"></script>
+<!--雷达-->
+<script type="text/javascript" src="js/echarts/echarts-all-3.js"></script>
+<script type="text/javascript" src="js/echarts/ecStat.min.js"></script>
+<script type="text/javascript" src="js/echarts/dataTool.min.js"></script>
+<script type="text/javascript" src="js/echarts/china.js"></script>
+<script type="text/javascript" src="js/echarts/world.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+<script type="text/javascript" src="js/echarts/bmap.min.js"></script>
+
+<script src="js/canvas.js"></script>
+<script src="js/skill.js"></script>
+<script src="js/radar.js"></script>
+<script src="js/index.js"></script>
