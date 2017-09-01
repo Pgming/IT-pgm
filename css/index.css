@@ -80,16 +80,17 @@ canvas {
     z-index: 9999999;
 }
 
-.one h1 {
+.one h2 {
     color: #fff;
     font-size: 100px;
     padding: 30px 30px 0px 30px;
+    font-weight: 700;
     /*text-shadow: 10px 10px 5px rgba(0, 0, 0, 1);
  */
     /*-webkit-box-reflect: below -50px -webkit-gradient(linear, center top, center bottom, from(rgba(0,0,0,0)), to(rgba(255,255,255,1)));   */
 }
 
-.one h2 {
+.one h3 {
     color: #fff;
     font-size: 40px;
     padding: 60px;
@@ -126,15 +127,17 @@ canvas {
 }
 
 .two .introduce {
-    width: 500px;
+    width: 600px;
     height: 400px;
     border: 1px solid #fff;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -500px;
+    margin-left: -550px;
     margin-top: -125px;
     box-shadow: 0px 0px 10px #fff;
+    color:#fff;
+    padding-left:10px;
 }
 
 .two .introduce h5 {
@@ -142,6 +145,10 @@ canvas {
     font-size: 20px;
     text-align: center;
 }
+.two .introduce h1{
+    font-weight: 700;
+}
+
 
 .two .portrait {
     width: 500px;
@@ -539,6 +546,10 @@ canvas {
 
 .five .relation ul li:nth-child(4) span:nth-child(2) {
     background: url(../images/boke.png) no-repeat center;
+    background-size: 95px;
+}
+.five .relation ul li:nth-child(5) span:nth-child(2) {
+    background: url(../images/github.png) no-repeat center;
     background-size: 95px;
 }
 .five .relation ul li span:nth-child(2):hover{
